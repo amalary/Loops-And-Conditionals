@@ -148,4 +148,38 @@ let sentence  = `Today Tom is wearing a ${thomsCloset[0][0]} with a pair of ${th
 
 console.log(sentence); 
 
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
 
+for(let i = 0; i< kristynsCloset.length; i++){
+    console.log( "WHIRR: Now washing " + kristynsCloset[i]); 
+}
+
+const thomsCloset = [
+    [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+    ], 
+    [
+      // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+]
+];
+
+console.log(thomsCloset[0], thomsCloset[1]); 
