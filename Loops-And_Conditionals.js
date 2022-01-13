@@ -92,4 +92,60 @@ let TMNT = ['Donatello', 'Leonardo', ' Raphael', 'Michaelangelo'];
 
 for(let i = 0; i < 4; i++){
     console.log(TMNT[i].toLocaleUpperCase()); 
-}
+};
+
+// 7
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+ // Thom's closet is more complicated. Check out this nested data structure!!
+    const thomsCloset = [
+    [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+    ], 
+    [
+      // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+]
+]; 
+
+// 7a.
+
+let krystnsShoe = kristynsCloset.shift(); 
+
+console.log(krystnsShoe);
+
+let thomsNewItem = thomsCloset[1].push(krystnsShoe)
+
+console.log(thomsCloset);  
+
+// let krystnsOutfit = kristynsCloset.splice(0,4); 
+
+// console.log(krystnsOutfit); 
+
+// let thomsOutfit = [thomsCloset[0].shift(), thomsCloset[0][4],thomsCloset[1][2]]; 
+
+// console.log(thomsOutfit); 
+
+let sentence  = `Today Tom is wearing a ${thomsCloset[0][0]} with a pair of ${thomsCloset[0][4]} and some really nice ${thomsCloset[1][2]}' \nKrystn is wearing really nice a ${kristynsCloset[2]}, ${kristynsCloset[4]}, and some ${kristynsCloset[0]}`; 
+
+console.log(sentence); 
+
+
