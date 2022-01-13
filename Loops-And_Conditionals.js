@@ -86,4 +86,10 @@ let jimHaffCity = jimHaff.splice(2,1,"Los Angeles","Dallas","New York City");
 let jimHaffRemovedCity = jimHaff.splice(2,1); 
 
 console.log(jimHaff);
+// 6 
 
+let TMNT = ['Donatello', 'Leonardo', ' Raphael', 'Michaelangelo']; 
+
+for(let i = 0; i < 4; i++){
+    console.log(TMNT[i].toLocaleUpperCase()); 
+}
