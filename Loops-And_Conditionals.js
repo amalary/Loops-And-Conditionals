@@ -183,3 +183,24 @@ const thomsCloset = [
 ];
 
 console.log(thomsCloset[0], thomsCloset[1]); 
+
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+// The median is the middle number in a sorted, ascending or descending, list of numbers and can be more descriptive of that data set than the average.
+
+let calculateMedian = function (arr){
+        arr.sort();
+        let median = 0;
+        let length = arr.length;
+        if (length % 2 != 0 )
+        median = arr[Math.floor(length / 2)]
+        else 
+        median = (arr[length/2]+arr[(length/2)-1]) / 2
+        return median;  
+    }
+
+console.log (calculateMedian(nums))
+
+console.log(nums.sort()); 
+
